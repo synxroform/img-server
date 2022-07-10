@@ -47,7 +47,7 @@ func Authorize(auth_data AuthorizationJSON) bool {
             result = ComparePassword(auth_data.Password, server_key, user_pass)
           }
         } else {
-          result = auth_data.Password == "сказочная фея"
+          result = auth_data.Password == ""
         }
         return nil
   })
